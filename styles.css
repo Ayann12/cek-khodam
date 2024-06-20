@@ -1,0 +1,12 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#result {
+    font-size: 18px;
+    text-align: center;
+}
