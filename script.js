@@ -25,7 +25,14 @@ document.getElementById('khodamForm').addEventListener('submit', function (event
         'Khodam Caper',
         'Khodam Mie Ayam',
         'Khodam Ganteng',
-        'Khodam Bakwan'
+        'Khodam Bakwan',
+        'Khodam Macan Tutul',
+        'Khodam Macan Kumbang',
+        'Khodam Harimau',
+        'Khodam Singa',
+        'Khodam Unta',
+        'Khodam Basreng',
+        'Khodam Ular'
     ];
 
     // Fungsi untuk mendapatkan khodam secara acak
