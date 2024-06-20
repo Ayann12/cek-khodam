@@ -1,6 +1,6 @@
 document.getElementById('khodamForm').addEventListener('submit', function (event) {
     event.preventDefault();
-    const name = document.getElementById('nameInput').value.trim();
+    const nameInput = document.getElementById('nameInput');
     const resultDiv = document.getElementById('result');
 
     // Data khodam yang di-hardcode
@@ -25,8 +25,7 @@ document.getElementById('khodamForm').addEventListener('submit', function (event
         'Khodam Caper',
         'Khodam Mie Ayam',
         'Khodam Ganteng',
-        'Khodam Bakwan',
-
+        'Khodam Bakwan'
     ];
 
     // Fungsi untuk mendapatkan khodam secara acak
@@ -35,10 +34,14 @@ document.getElementById('khodamForm').addEventListener('submit', function (event
         return khodamData[randomIndex];
     }
 
+    const name = nameInput.value.trim();
     const khodam = getRandomKhodam();
 
     // Tampilkan hasil
     resultDiv.classList.remove('d-none', 'alert-danger', 'alert-success');
     resultDiv.classList.add('alert-success');
     resultDiv.textContent = `Nama : ${name}, Terdapat : ${khodam}`;
+
+    // Reset input nama setelah tombol diklik
+    nameInput.value = '';
 });
